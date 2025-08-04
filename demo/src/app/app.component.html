@@ -1,0 +1,19 @@
+<h1>Formation {{ training }}</h1>
+<h2>{{ title }}</h2>
+<p>{{ title }}</p>
+
+<button (click)="isGood = !isGood">Toggle</button>
+
+@if (isGood) {
+<p>2+2 = {{ 2+2 }}</p>
+}
+
+<p>{{ fruits[0] }}</p>
+<p>{{ fruits[1] }}</p>
+<p>{{ fruits[2] }}</p>
+
+@for (fruit of fruits; track fruit) {
+  <p>{{ fruit }}</p>
+}
+
+<counter />

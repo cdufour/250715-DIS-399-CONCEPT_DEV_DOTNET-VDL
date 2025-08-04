@@ -1,0 +1,30 @@
+*** Exos ***
+
+1/ CounterComponent
+a. Remettre le compteur à 0 lorsqu'on dépasse 20
+b. Afficher le paragraphe "danger" lorsque le compteur
+est supérieur à 15
+
+2. Exo QuoteComponent
+Créer un composant "quote" qui affichera une citation et son auteur.
+Cet affichage se fera de façon aléatoire ou bien séquencielle 
+(le premier élément, puis le second, etc.), à intervale régulier (toutes les 10 secondes).
+La liste des citations sera embarquée dans le composant en tant que propriété de classe.
+
+Exemples de citation: 
+"La femme est l'avenir de l'homme" (Aragon)
+"The world is yours" (Toni Montana)
+"Ad astra per aspera" (Inconnu)
+
+Option: associer ce composant à un module (ExosModule). Créer le module si nécessaire.
+
+Tip: setInterval
+
+3. ToggleBtnComponent
+En vous inspirant de la capture (ToggleBtn.png), créer un composant Angular 
+affichant un bouton bascule "oui/non"
+
+L'apparence du bouton changera à chaque clic sur le bouton
+
+Quand oui est choisi, on affiche dans la console la valeur: 1
+Quand non est choisi, on affiche dans la console la valeur: 0
