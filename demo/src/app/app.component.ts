@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CounterComponent } from './counter/counter.component';
+import { ExosModule } from './exos/exos.module';
 
 @Component({
   selector: 'app-root',
-  imports: [CounterComponent],
+  imports: [CounterComponent, ExosModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

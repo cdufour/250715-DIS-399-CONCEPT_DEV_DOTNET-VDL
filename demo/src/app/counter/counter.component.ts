@@ -13,7 +13,15 @@ export class CounterComponent {
         this.count += 1;
         if (this.count > 10) {
             this.className = 'dark';
+
+            if (this.count > 20) {
+                this.count = 0;
+            }
+
+        } else {
+            this.className = 'bright';
         }
+
     }
 
     decrement() {
