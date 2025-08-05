@@ -1,6 +1,6 @@
 *** Exos ***
 
-1/ CounterComponent
+1. CounterComponent
 a. Remettre le compteur à 0 lorsqu'on dépasse 20
 b. Afficher le paragraphe "danger" lorsque le compteur
 est supérieur à 15
@@ -28,3 +28,18 @@ L'apparence du bouton changera à chaque clic sur le bouton
 
 Quand oui est choisi, on affiche dans la console la valeur: 1
 Quand non est choisi, on affiche dans la console la valeur: 0
+
+
+4. CityChoiceComponent
+Créer 1 composant city-choice proposant un menu déroulant listant
+des villes (ex: Turin, Rio, etc.)
+Lorsque l'utilisateur choisit une ville, devront apparaître dans le DOM:
+- 1 photo de la ville choisie (utiliser des urls absolues que vous trouverez facilement sur le web)
+- le nom de la ville
+- le nom du pays d'appartenance
+
+Tip: utiliser un event binding (change) sur la balise select pour réagir au changement d'option
+
+Option: utiliser un composant enfant pour l'affichage 
+des données (images + textes) de la ville.
+Pour la passage d'infos entre composants: https://youtu.be/pv2ap18dkic?si=NkPfUZqndNXdsmmu

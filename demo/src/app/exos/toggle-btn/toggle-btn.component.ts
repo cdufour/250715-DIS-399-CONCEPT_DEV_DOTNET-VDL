@@ -10,16 +10,24 @@ export class ToggleBtnComponent {
   text: 'oui'|'non' = 'oui';
   isOff: boolean = false;
   left: string = '62px';
+  marginLeft: string = '0'; // marge du texte (span)
 
   onClick() {
     console.log('click');
+    
 
-    if (this.text == 'oui') {
+    //this.isOff = !this.isOff;
+
+    if (this.isOff = this.text == 'oui') {
       this.text = 'non';
       this.left = '2px';
+      this.marginLeft = '46px';
     } else {
       this.text = 'oui';
       this.left = '62px';
+      this.marginLeft = '0';
     }
+
+    console.log(this.isOff ? '0' : '1');
   }
 }

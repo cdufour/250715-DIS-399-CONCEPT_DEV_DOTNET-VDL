@@ -1,4 +1,4 @@
-<div class="switch" (click)="onClick()">
-    <span>{{ text }}</span>
-    <div class="circle" [ngStyle]="{left: left}">ds</div>
+<div class="switch" (click)="onClick()" [ngClass]="{off: isOff}">
+    <span [ngStyle]="{marginLeft: marginLeft}">{{ text }}</span>
+    <div class="circle" [ngStyle]="{left: left}"></div>
 </div>

@@ -1,0 +1,31 @@
+<h2>Liste des étudiants</h2>
+
+<!--
+Afficher en rouge le nom des étudiants avec note < 10
+-->
+
+@for(student of students; track student; let idx = $index) {
+    <p>
+        <span>{{ idx + 1 }}. </span>
+        <span [ngStyle]="{color: student.grade < 10 ? 'red' : 'black'}">
+            {{ student.name }}</span>
+        @if(student.grade < 10) {
+            <span style="color:red">=> Alerter les autorités !</span>
+        }
+        <span [ngStyle]="style1">=> INFO</span>
+    </p>
+}
+
+<ol>
+@for(student of students; track student) {
+    <li [ngClass]="{winner: student.grade > 15, 'maxi-loser': student.grade < 5}">{{ student.name }}</li>
+}
+</ol>
+
+<p [ngClass]="class1">Simple paragraphe...</p>
+
+<select>
+@for(student of students; track student; let idx = $index) {
+    <option [value]="'stu_' + (idx + 1)">{{ student.name }}</option>
+}
+</select>
