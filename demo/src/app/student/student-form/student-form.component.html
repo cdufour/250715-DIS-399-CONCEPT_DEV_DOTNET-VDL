@@ -1,1 +1,13 @@
-<p>student-form works!</p>
+<div style="margin-bottom: 20px;">
+    <form>
+        <input type="text" name="name" [(ngModel)]="student.name" />
+        <input type="number" name="grade" [(ngModel)]="student.grade" />
+        <button (click)="onSubmit()">Ajouter l'étudiant</button>
+    </form>
+
+    <p>{{ student.name | uppercase }}</p>
+    <p>{{ student | json }}</p>
+    <p>{{ message }}</p>
+
+</div>
+

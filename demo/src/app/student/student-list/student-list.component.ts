@@ -11,6 +11,7 @@ import { Student } from '../student';
 export class StudentListComponent {
 
   students: Student[] = [];
+  areAllGradesVisible: boolean = false;
 
   constructor(private studentService: StudentService) {
     
@@ -20,7 +21,7 @@ export class StudentListComponent {
 
     this.studentService
       .getStudents()
-      .subscribe((students: any) => this.students = students)
+      .subscribe((students: Student[]) => this.students = students)
     
 
   }

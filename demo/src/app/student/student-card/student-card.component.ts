@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Student } from '../student';
 
 @Component({
   selector: 'student-student-card',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './student-card.component.css'
 })
 export class StudentCardComponent {
-
+  @Input() student: Student | null = null;
+  @Input() isGradeVisible: boolean = false;
 }

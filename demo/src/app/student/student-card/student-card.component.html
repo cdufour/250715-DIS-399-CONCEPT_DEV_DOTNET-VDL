@@ -1,1 +1,17 @@
-<p>student-card works!</p>
+@if(student) {
+
+<article>
+    <h4>{{ student.name }}</h4>
+    <button (click)="isGradeVisible = !isGradeVisible">
+        @if(isGradeVisible) { Masquer }
+        @else { Afficher }
+        la moyenne
+    </button>
+    
+    @if(isGradeVisible) {
+    <span>{{ student.grade }}/20</span>
+    }
+    
+</article>
+
+}

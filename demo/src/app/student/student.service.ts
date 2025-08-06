@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Student } from './student';
 
 const API = 'http://localhost:3000/students';
 
@@ -10,10 +12,13 @@ export class StudentService {
 
   constructor(private http: HttpClient) { }
 
-  getStudents() {
-
+  getStudents(): Observable<Student[]> {
     // retourne un observable (pour exploitation asynchrone)
-    return this.http.get(API);
+    return this.http.get<Student[]>(API);
+  }
+
+  postStudent(student: Student): Observable<Student> {
+    return this.http.post<Student>(API, student);
   }
 
 }

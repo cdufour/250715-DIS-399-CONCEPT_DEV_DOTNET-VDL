@@ -44,6 +44,16 @@
       "id": "ceca",
       "name": "Antonio",
       "grade": 2
+    },
+    {
+      "id": "dde7",
+      "name": "Maximus",
+      "grade": 14
+    },
+    {
+      "id": "0155",
+      "name": "Minimus",
+      "grade": 10
     }
   ]
 }

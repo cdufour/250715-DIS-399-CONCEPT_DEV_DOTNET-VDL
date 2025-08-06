@@ -43,3 +43,14 @@ Tip: utiliser un event binding (change) sur la balise select pour réagir au cha
 Option: utiliser un composant enfant pour l'affichage 
 des données (images + textes) de la ville.
 Pour la passage d'infos entre composants: https://youtu.be/pv2ap18dkic?si=NkPfUZqndNXdsmmu
+
+5. PassGenComponent
+Créer un composant permettant de générer un mot de passe aléatoire.
+Le composant permettra d'indiquer: 
+- la longueur souhaitée
+- la présence ou non de chiffres
+- la présence ou non de caractères spéciaux
+
+Option: ajouter un bouton "sauvergarder le mot de passe" afin
+d'envoyer le mot de passe à un serveur (ex: json-server) via une
+requête en PassGenComponent
