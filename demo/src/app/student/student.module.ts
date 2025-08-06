@@ -14,6 +14,7 @@ import { StudentFormComponent } from './student-form/student-form.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [StudentListComponent]
 })
 export class StudentModule { }
