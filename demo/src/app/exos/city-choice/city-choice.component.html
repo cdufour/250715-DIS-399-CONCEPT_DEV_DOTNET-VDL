@@ -1,0 +1,18 @@
+<select (change)="onChange($event)">
+@for(city of cities; track city) {
+    <option>{{ city.name }}</option>
+}
+</select>
+
+<!--
+@if(selectedCity) {
+<p>Ville sélectionnée: {{ selectedCity.name }}</p>
+}
+-->
+
+<!-- elvis operator -->
+<p>Ville sélectionnée: {{ selectedCity?.name }}</p>
+
+
+<exos-city-card [city]="selectedCity" />
+

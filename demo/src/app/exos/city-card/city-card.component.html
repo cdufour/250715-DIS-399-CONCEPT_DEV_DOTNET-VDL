@@ -1,0 +1,7 @@
+@if(city) {
+<div>
+    <h3>{{ city.name }}</h3>
+    <p>Pays: {{ city.country }}</p>
+    <img [src]="city.image" [alt]="city.name" width="300" />
+</div>
+}
