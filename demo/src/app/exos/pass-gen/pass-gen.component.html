@@ -1,0 +1,19 @@
+<h2>Générateur de mot de passe</h2>
+<div>
+    <input type="number" placeholder="10" [(ngModel)]="passlen" />
+</div>
+<div>
+    <input type="checkbox" [(ngModel)]="withNumbers" />Inclure un chiffre
+</div>
+<div>
+    <input type="checkbox" [(ngModel)]="withSpecialChars" />Inclure un caractère spécial
+</div>
+<div>
+    <button (click)="onClick()">Générer</button>
+</div>
+
+<p>Mot de passe généré: <strong>{{ pass }}</strong></p>
+
+@if (pass != '') {
+    <button (click)="savePass()">Sauvegarder</button>
+}

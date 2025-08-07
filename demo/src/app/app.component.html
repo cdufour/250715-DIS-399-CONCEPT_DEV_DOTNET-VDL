@@ -1,5 +1,12 @@
 <h1>Formation {{ training }}</h1>
 
+<nav>
+    <ul>
+      <li><a routerLink="/students">Liste</a></li>
+      <li><a routerLink="/student/add">Formulaire</a></li>
+    </ul>
+</nav>
+
 @if (false) {
 
   <h2>{{ title }}</h2>
@@ -24,9 +31,16 @@
   <exos-toggle-btn />
   <app-students />
   <exos-city-choice />
+  <exos-pass-gen />
+  <student-student-list />
 }
 
-<student-student-list />
+
+
+<router-outlet />
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { StudentService } from '../student.service';
 import { Student } from '../student';
 
@@ -8,22 +8,22 @@ import { Student } from '../student';
   templateUrl: './student-list.component.html',
   styleUrl: './student-list.component.css'
 })
-export class StudentListComponent {
+export class StudentListComponent implements OnInit {
 
   students: Student[] = [];
   areAllGradesVisible: boolean = false;
 
-  constructor(private studentService: StudentService) {
-    
+  constructor(private studentService: StudentService) {}
+
+  ngOnInit(): void {
     // fetch('http://localhost:3000/students')
     //   .then(res => res.json())
     //   .then(students => console.log(students))
-
     this.studentService
       .getStudents()
       .subscribe((students: Student[]) => this.students = students)
-    
-
   }
+
+  
 
 }
