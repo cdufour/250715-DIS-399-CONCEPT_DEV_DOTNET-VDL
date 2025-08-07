@@ -67,4 +67,4 @@ vers la liste après suppression
 En option:
 c/ Créer une route dynamique (/student/:id) affichant les données d'un
 étudiant dont l'id est fourni dans l'url. Le composant lié à ce route
-utilisera le service afind d'obtenur les données de l'étudiant
+utilisera le service afin d'obtenir les données de l'étudiant
