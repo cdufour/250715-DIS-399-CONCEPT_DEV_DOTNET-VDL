@@ -24,6 +24,15 @@ export class StudentListComponent implements OnInit {
       .subscribe((students: Student[]) => this.students = students)
   }
 
+  deleteStudent(student: Student) {
+    console.log(student);
+    
+    // supprimer l'étudiant de la liste
+    let updatedStudents = this.students.filter(s => s.id != student.id);
+    this.students = updatedStudents; // view re-render
+
+  }
+
   
 
 }

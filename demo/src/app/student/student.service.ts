@@ -12,6 +12,10 @@ export class StudentService {
 
   constructor(private http: HttpClient) { }
 
+  getStudent(id: string): Observable<Student> {
+    return this.http.get<Student>(API + '/' + id);
+  }
+
   getStudents(): Observable<Student[]> {
     // retourne un observable (pour exploitation asynchrone)
     return this.http.get<Student[]>(API);
@@ -19,6 +23,10 @@ export class StudentService {
 
   postStudent(student: Student): Observable<Student> {
     return this.http.post<Student>(API, student);
+  }
+
+  deleteStudent(student: Student): Observable<Student>  {
+    return this.http.delete<Student>(API + '/' + student.id);
   }
 
 }

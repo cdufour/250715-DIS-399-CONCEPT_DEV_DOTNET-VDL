@@ -8,7 +8,8 @@
 
 <student-student-card 
     [student]="student" 
-    [isGradeVisible]="areAllGradesVisible " 
+    [isGradeVisible]="areAllGradesVisible"
+    (onDelete)="deleteStudent($event)"
 />
 
 }

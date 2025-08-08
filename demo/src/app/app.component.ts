@@ -4,6 +4,7 @@ import { ExosModule } from './exos/exos.module';
 import { StudentsComponent } from './students/students.component';
 import { StudentModule } from './student/student.module';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { Rform } from './rform/rform';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     StudentsComponent, 
     StudentModule,
     RouterOutlet,
-    RouterLink
+    RouterLink,
+    Rform
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
