@@ -1,15 +1,18 @@
-<form>
+<form [formGroup]="studentForm">
     <label>Nom
-        <input id="name" type="text"  />
+        <input id="name" type="text" formControlName="name" />
     </label>
     <label>Note
-        <input type="number"  />
+        <input type="number" formControlName="grade"  />
     </label>
     <label>Email
-        <input type="email"  />
+        <input type="email" formControlName="email"  />
     </label>
     <label>Code postal
-        <input type="text"  />
+        <input type="text" formControlName="postcode"  />
     </label>
-    <button>Valider</button>
+    <button [disabled]="!studentForm.valid">Valider</button>
 </form>
+
+<div>Name value: {{ studentForm.controls['name'].value }}</div>
+<div>Formulaire valide: {{ studentForm.valid }}</div>
