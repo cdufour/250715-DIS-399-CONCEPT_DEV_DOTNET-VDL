@@ -57,9 +57,9 @@ requête en POST
 
 
 6.
-a/ Dans StudentService ajouter des méthodes permettant :
-- l'obtention d'un seul étudiant par rapport à son identifiant
-- la suppresion d'un étudiant
+a/ Dans StudentService ajouter des méthodes permettant:
+- l'obtention d'un seul étudiant par rapport à son id
+- la suppresion d'un étudiant par rapport à son id
 b/ Dans le template de StudentCard ajouter un bouton de suppression appelant
 la méthode correspondante dans le service. Rediriger la navigation
 vers la liste après suppression

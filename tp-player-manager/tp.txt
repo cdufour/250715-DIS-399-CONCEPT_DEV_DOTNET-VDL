@@ -1,0 +1,15 @@
+*** TP Player Manager ***
+
+En vous inspirant de la capture, créer une application Angular
+multi-composant permettant de:
+- réaliser des opérations CRUD sur une entité "Player"
+- filter les joueurs par équipe et par poste
+
+Un service exposera les fonctionnalités d'accès aux données
+aux composants qui en auront besoin.
+
+On utilisera le package json-server (https://www.npmjs.com/package/json-server)
+pour simuler l'API REST
+
+Prévoir des routes disctinctes pour l'affichage de la liste des joueurs
+et le formulaire d'enregistrement.
