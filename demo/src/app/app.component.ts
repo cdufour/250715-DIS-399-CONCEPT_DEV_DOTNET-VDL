@@ -5,6 +5,7 @@ import { StudentsComponent } from './students/students.component';
 import { StudentModule } from './student/student.module';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { Rform } from './rform/rform';
+import { PlayerManagerModule } from './player-manager/player-manager.module';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { Rform } from './rform/rform';
     StudentModule,
     RouterOutlet,
     RouterLink,
-    Rform
+    Rform,
+    PlayerManagerModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
