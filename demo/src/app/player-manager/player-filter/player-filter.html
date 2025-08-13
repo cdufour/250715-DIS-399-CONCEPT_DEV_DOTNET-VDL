@@ -1,0 +1,13 @@
+<select (change)="filterByPosition($event)">
+    <option value="">Filtrer par poste</option>
+    @for (position of positions; track position) {
+    <option [value]="position">{{position}}</option>
+    }
+</select>
+
+<select (change)="filterByTeam($event)">
+    <option value="">Filtrer par équipe</option>
+    @for (team of teams; track team) {
+    <option [value]="team.id">{{team.name}}</option>
+    }
+</select>

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-12">
+            <h5>Player Filters</h5>
+            
+            <player-filter
+            class="mr-4" 
+            (onChange)="filter($event)"
+            key="position"
+            ></player-filter>
+
+            <!--
+            <player-filter 
+            (onChange)=filter($event)
+            key="teamid"
+            ></player-filter>
+            -->
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-7">
+            <h5>Player List</h5>
+            <player-list 
+            [players]="players" 
+            (onDelete)="deletePlayer($event)"
+            (onEdit)="editPlayer($event)"
+        ></player-list>
+        </div>
+        <div class="col-5">
+            <h5>Player Form</h5>
+            <player-form 
+            (onSave)="loadPlayers()"
+            [player]="player"
+            [editMode]="editMode"
+        ></player-form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

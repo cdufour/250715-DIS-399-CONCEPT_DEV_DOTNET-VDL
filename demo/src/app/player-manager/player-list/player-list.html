@@ -1,0 +1,34 @@
+<table class="table table-striped">
+    <thead>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Age</th>
+        <th>Poste</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        @for (player of players; track player) {
+        <tr>    
+            <td>{{ player.lastname }}</td>
+            <td>{{ player.firstname }}</td>
+            <td>{{ player.age }}</td>
+            <td>{{ player.position | titlecase }}</td>
+            <td>
+                @if (player.id) {
+                <button
+                    class="btn btn-sm btn-secondary mr-2" 
+                    (click)="onEdit.emit(player.id)">
+                    Modifier
+                </button>
+                <button
+                    class="btn btn-sm btn-danger" 
+                    (click)="onDelete.emit(player.id)">
+                Supprimer
+                </button>
+                }
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
